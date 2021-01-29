@@ -250,7 +250,7 @@ List of databases
 (5 rows)
 ```
 
-5\. Подключимся к созданной БД для создания таблиц в нет:
+5\. Подключимся к созданной БД для создания таблиц в ней:
 ```postgresql
 db=# \c test
 You are now connected to database "test" as user "app".
@@ -272,7 +272,7 @@ test=# \dt
 
 Команда `\dt` показывает существующие в текущей БД (к которой мы подключены) таблицы.
 
-С помощью SQL это можно сделать следующим образом (будут выведены все таблицы:
+С помощью SQL это можно сделать следующим образом (будут выведены все таблицы):
 ```postgresql
 test=# select * from pg_tables;
      schemaname     |        tablename        | tableowner | tablespace | hasindexes | hasrules | hastriggers | rowsecurity 
