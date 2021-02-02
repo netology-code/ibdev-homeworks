@@ -16,7 +16,7 @@
 
 ## Блок 3. DevSecOps и AppSec
 
-3.1. [ ] [DevSecOps и AppSec (часть 1)](06_devsecops)
+3.1. [x] [DevSecOps и AppSec (часть 1)](06_devsecops)
 
 3.2. [ ] [DevSecOps и AppSec (часть 2)](07_devsecops)
 
