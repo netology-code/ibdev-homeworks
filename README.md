@@ -18,5 +18,5 @@
 
 3.1. [x] [DevSecOps и AppSec (часть 1)](06_devsecops)
 
-3.2. [ ] [DevSecOps и AppSec (часть 2)](07_devsecops)
+3.2. DevSecOps и AppSec (часть 2) (ДЗ не предусмотрено)
 
