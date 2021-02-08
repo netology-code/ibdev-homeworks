@@ -260,7 +260,7 @@ You are now connected to database "test" as user "app".
 
 6\. Создадим таблицу `records` в нашей тестовой БД `CREATE TABLE records (value TEXT, status TEXT, created TIMESTAMP DEFAULT CURRENT_TIMESTAMP);`:
 ```postgresql
-test=# CREATE TABLE records (value TEXT);
+test=# CREATE TABLE records (value TEXT, status TEXT, created TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
 CREATE TABLE
 test=# \dt
         List of relations
