@@ -282,7 +282,7 @@ test=# select * from pg_tables;
  ...                | ...                     | ...        |            | ...        | ...      | ...         | ...
 ```
 
-7\. Вставим запись в таблицу `INSERT INTO records(value, status) VALUES ('transfer money from 55** **** 0001 to 42** **** 0002', 'success')`:
+7\. Вставим запись в таблицу `INSERT INTO records(value, status) VALUES ('transfer money from 55** **** 0001 to 42** **** 0002', 'success');`:
 
 ```postgresql
 test=# INSERT INTO records(value, status) VALUES ('transfer money from 55** **** 0001 to 42** **** 0002', 'success');
