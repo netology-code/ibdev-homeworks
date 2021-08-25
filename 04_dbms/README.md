@@ -316,7 +316,7 @@ test-# \dp
 
 **Важно**: откройте новую консоль (окно терминала) в каталоге с файлом `docker-compose.yml` и все команды выполняйте там:
 
-1\. Получим psql для пользователя `reader`: `docker-compose exec postgres psql -U reader -d test` (флаг -p означает, что подключаемся с паролем)
+1\. Получим psql для пользователя `reader`: `docker-compose exec postgres psql -U reader -d test` 
 
 2\. Выполним запрос на чтение:
 ```postgresql
