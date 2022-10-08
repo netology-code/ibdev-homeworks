@@ -21,7 +21,7 @@
 3. Анализировать используемые в проекте лицензии — License Scanning.
 4. Проверять секреты — Secret Detection.
 
-Весь список доступных проверок доступен по адресам:
+Список всех проверок доступен по адресам:
 * https://gitlab.com/gitlab-org/gitlab/-/tree/master/lib/gitlab/ci/templates/Security
 * https://docs.gitlab.com/ee/user/application_security/ (документация)
 
