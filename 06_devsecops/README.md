@@ -43,7 +43,7 @@
 
 ![](pic/04.png)
 
-5\. Дождитесь попадания на главную страницу: 
+5\. Дождитесь перехода на главную страницу: 
 
 ![](pic/05.png)
 
@@ -59,7 +59,7 @@
 
 ![](pic/08.png)
 
-9\. Нажмите на кнопку `Repo By URL` и заполните поле Git repository URL ссылкой: https://github.com/netology-code/ib-devsecops-app.git:
+9\. Нажмите на кнопку `Repo By URL` и заполните поле Git repository URL ссылкой https://github.com/netology-code/ib-devsecops-app.git:
 
 ![](pic/09.png)
 
