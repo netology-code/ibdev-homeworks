@@ -27,7 +27,7 @@
 
 ### Этапы выполнения
 
-1\. Перейдите по ссылке https://gitlab.com/-/trial_registrations/new и зарегистрируйте новую учётную запись:
+1\. Перейдите [по ссылке](https://gitlab.com/-/trial_registrations/new) и зарегистрируйте новую учётную запись:
 
 ![](pic/01.png)
 
