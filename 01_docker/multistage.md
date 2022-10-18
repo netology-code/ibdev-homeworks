@@ -96,7 +96,7 @@ docker container run -p 9999:9999 ibdevserver
 
 После этого можете открыть в браузере `localhost` на порту 9999 или `docker-machine ip default`, если у вас Docker Toolbox.
 
-Для тех, кто использует Play With Docker, нужно открыть порт с помощью кнопки `OPEN PORT`. Браузер сам откроет новую вкладку.
+Для тех, кто использует Play with Docker, нужно открыть порт с помощью кнопки `OPEN PORT`. Браузер сам откроет новую вкладку.
 
 ![](pic/open-port.png)
 
