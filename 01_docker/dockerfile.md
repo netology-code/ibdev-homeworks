@@ -163,4 +163,4 @@ COPY app.bin /
 CMD ["/app.bin"]
 ```
 
-Подробную информацию о командах Docker вы можете найти в [официальной документации](https://docs.docker.com/engine/reference/builder/).
+Подробная информация о командах Docker есть в [официальной документации](https://docs.docker.com/engine/reference/builder/).
