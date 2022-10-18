@@ -118,4 +118,4 @@ services:
 
 Детальная информация о файле Docker Compose есть в [официальной документации](https://github.com/compose-spec/compose-spec/blob/master/spec.md).
 
-Все файлы из этого документеа расположены в каталоге [assets](assets).
+Все файлы из этого документеа есть в каталоге [assets](assets).
