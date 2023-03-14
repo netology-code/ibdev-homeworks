@@ -43,7 +43,7 @@
 1\. Запустите сервис SonarQube:
 
 ```shell
-docker-composer up sonarqube
+docker-compose up sonarqube
 ```
 
 Команда позволяет запустить только этот сервис и те, от которых он зависит (а не все перечисленные в `docker-compose.yml`).
