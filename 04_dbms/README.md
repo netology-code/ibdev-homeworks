@@ -189,7 +189,7 @@ db=# SELECT * FROM pg_roles;
 (10 rows)
 ```
 
-3\. Проверьте существующие базы данных и их владельцев `SELECT * FROM pg_database`.
+3\. Проверьте существующие базы данных и их владельцев `SELECT * FROM pg_database;`.
 
 ```postgresql
 db=# SELECT * FROM pg_database;
@@ -295,7 +295,7 @@ test=# SELECT * FROM records;
 (1 row)
 ```
 
-8\. Дайте роли `reader` права на чтение содержимого таблицы `records` `GRANT SELECT ON records TO reader`.
+8\. Дайте роли `reader` права на чтение содержимого таблицы `records` `GRANT SELECT ON records TO reader;`.
 ```postgresql
 test=# GRANT SELECT ON records TO reader;
 GRANT
