@@ -18,7 +18,7 @@ Multistage build подразумевает, что разработчики м�
 4. Результаты сборки копируете в новый образ.
 
 ```dockerfile
-FROM golang:1.15-alpine AS build
+FROM golang:1.20-alpine AS build
 COPY main.go /app/
 ENV CGO_ENABLED=0
 WORKDIR /app
