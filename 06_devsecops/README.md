@@ -26,60 +26,74 @@
 
 ### Этапы выполнения
 
-1\. Перейдите [по ссылке](https://gitlab.com/-/trial_registrations/new) и зарегистрируйте новую учётную запись.
+1\. Перейдите [по ссылке](https://gitlab.com/-/trial_registrations/new) и зарегистрируйте новую учётную запись. Попросит подтвердить почтовый ящик, поэтому указываем действую почту.
 
-![](pic/01.png)
+![](pic/register01.png)
 
-После регистрации, для работы с пайплайнами безопасности, необходимо поставить локальные раннеры на свой компьютер
-https://docs.gitlab.com/runner/install/
-Раннер нужен для сборки и проведения проверок безопасности. Сам раннер нужно будет в последствии выбрать в настройках проекта из списка Available Specific Runners:
-![](https://i.imgur.com/aXC66KH.png)
+2\. Установите значения, как на скриншоте, и нажмите кнопку `Continue`. (В полях надо указать любую страну и любой номер телефона.)
 
-2\. Установите значения, как на скриншоте, и нажмите кнопку `Continue`.
-
-![](pic/02.png)
+![](pic/trial1.png)
 
 3\. Заполните данные для продолжения.
 
-![](pic/03.png)
+![](pic/welcome_page.png)
+
 
 4\. Введите название для группы проектов.
 
-![](pic/04.png)
+![](pic/trial2.png)
 
 5\. Дождитесь перехода на главную страницу. 
 
-![](pic/05.png)
+![](pic/start_page.png)
 
 6\. Проверьте свой email, указанный при регистрации, и подтвердите регистрацию.
 
-![](pic/06.png)
+![](pic/confirm_reg.png)
 
-7\. Нажмите на кнопку `New Project` для создания нового проекта.
+7\. Нажмите на кнопку `Create new project` для создания нового проекта.
 
-![](pic/07.png)
+![](pic/start_page.png)
 
 8\. Выберите `Import project` для импорта готового проекта.
 
-![](pic/08.png)
+![](pic/import_project.png)
 
-9\. Нажмите на кнопку `Repo By URL` и заполните поле Git repository URL ссылкой https://github.com/netology-code/ib-devsecops-app.git.
+9\. Нажмите на кнопку `Repository By URL` и заполните поле Git repository URL ссылкой `https://github.com/netology-code/ib-devsecops-app.git` .
 
-![](pic/09.png)
+![](pic/repo_by_url.png)
 
 10\. Оставьте остальные поля заполненными по умолчанию и нажмите `Create project`.
 
-![](pic/10.png)
+![](pic/repo_by_url_2.png)
 
-11\. Зайдите в пункт меню `CI/CD` — `Pipelines` и нажмите на кнопку `Run Pipeline`.
+11\. Настройте локальные раннеры
+
+После регистрации, для работы с пайплайнами безопасности, необходимо поставить локальные раннеры на свой компьютер
+[](https://docs.gitlab.com/runner/install/)
+Раннер нужен для сборки и проведения проверок безопасности.
+Откройте настройки проекта, а именно настройки CI/CD.
+![](pic/settings_cicd.png)
+Подсказка: адрес имеет вид ```https://gitlab.com/<название группы>/<название проекта>/-/settings/ci_cd```
+
+Внутри настроек переходим к настройкам `Runners`, и нажимем `New project Runner`. Следуем инструкции по настройке раннера windows/linux/macos (в зависимости от вашей ОС). 
+![](pic/create_runner.png)
+
+При успешной настройке, в настройках отобразится локальный раннер.
+![](pic/runner_good.png)
+
+При этом, необходимо откючить Group runners и Shared runners.
+![](pic/disable_gr.png)
+
+12\. Зайдите в пункт меню `Build` — `Pipelines` и нажмите на кнопку `Run Pipeline`.
 
 ![](pic/pipeline.png)
 
-12\. На странице снова нажмите на кнопку `Run Pipeline`.
+13\. На странице снова нажмите на кнопку `Run Pipeline`.
 
-![](pic/run-pipeline.png)
+![](pic/run_pipeline.png)
 
-13\. Дождитесь окончания процесса анализа.
+14\. Дождитесь окончания процесса анализа.
 
 ![](pic/13_inprogress.png)
 
@@ -91,11 +105,11 @@ https://docs.gitlab.com/runner/install/
 
 ![](pic/retirejs.png)
 
-14\. Перейдите в раздел `Security & Compliance`.
+15\. Перейдите в раздел `Security & Compliance`.
 
 ![](pic/14.png)
 
-15\. Изучите внимательно разделы:
+16\. Изучите внимательно разделы:
 
 - Vulnerability Report (отчёт об уязвимостях).
 - Dependency List.
