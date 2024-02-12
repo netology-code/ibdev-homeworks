@@ -15,11 +15,10 @@
 
 ### Инструкция к заданию
 
-1. Установить Docker (инструкция доступна по [ссылке](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker/installation.md)).
-2. Настроить работу компонентов Docker на виртуальной машине (рекомендации размещены по [ссылке](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/instr_linux.md))
-3. Выполните задания.
-6. В качестве результата отправьте ответы на вопросы в личном кабинете студента на сайте [netology.ru](https://netology.ru).
-7. Любые вопросы по решению задач задавайте в чате учебной группы.
+1. Настроить работу компонентов Docker на виртуальной машине (рекомендации размещены по [ссылке](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/instr_linux.md))
+2. Выполните задания.
+3. В качестве результата отправьте ответы на вопросы в личном кабинете студента на сайте [netology.ru](https://netology.ru).
+4. Любые вопросы по решению задач задавайте в чате учебной группы.
 
 ------
 
