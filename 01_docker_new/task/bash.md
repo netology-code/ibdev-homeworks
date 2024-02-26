@@ -37,17 +37,29 @@
 
 где `–rm` - удалить контейнер после завершения его работы.
 
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/%E2%80%93rm.png)
+
 Убедитесь, что отсутствующий образ загрузился перед запуском контейнера.
 
 2. Переключитесь на правый терминал, перейдите в корневой каталог и проверьте наличие образа и контейнера.
+
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/contain.png)
 
 3. Вернитесь в левый терминал и выполните в активном контейнере команды bash:
 - `whoami` - кто я,
 - `cat /etc/*release*` - показать информацию о системе.
 
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/whoami.png" width="700">
+
 Выполните команду `ls -la /` - показать список всех каталогов и файлов в корневом каталоге, включая скрытые системные.
 
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/ls%20-la.png" width="700">
+
 Перейдите в правый терминал и выполните в основной системе аналогичные команды bash (см. выше).
+
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/bash_3.png" width="400">
+
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/bash_4.png)
 
 4. Информация получена. Давайте сравним информацию левого терминала с информацией из правого терминала. 
 
@@ -63,7 +75,11 @@
 
 Проверяем, выполнив команду `exit` (выход):
 
-Далее выполняем команду `sudo docker ps -a`
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/exit.png" width="300">
+
+Далее выполняем команду `sudo docker ps -a`:
+
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/sudo%20docker%20ps%20-a.png" width="700">
 
 Убеждаемся, что контейнеры отсутствуют.
 
