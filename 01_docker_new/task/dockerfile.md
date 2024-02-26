@@ -35,6 +35,8 @@
 Проверьте наличие и права созданных файлов командой
 `ls -l`.
 
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/ls%20-l.png" width="400">
+
 **Обратите внимание!** Файл скрипта не имеет прав на выполнение. Это означает, что скрипт нельзя будет запустить и выполнить. 
 
 Предоставьте скрипту права на выполнение только для владельца файла (для себя) с помощью команды
@@ -48,12 +50,16 @@
 Повторно проверьте назначенные права для скрипта: 
 `ls -l`.
 
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/ls%20-l_2.png" width="400">
+
 Отлично! Необходимые права назначены.
 
 2. Добавьте скрипт в созданный файл и проверьте работу скрипта.
 
 Откройте файл скрипта с помощью текстового редактора `mousepad`, который предустановлен на Kali Linux:
 `mousepad my_bash_1.sh`.
+
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/mousepad%20my_bash_1.png" width="600">
 
 На Ubuntu можете воспользоваться текстовым редактором `nano`.
 
@@ -74,14 +80,20 @@ echo ${my_name}
 date +'%d/%m/%Y %H:%M:%S'
 ```
 
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/date.png" width="600">
+
 Сохраните содержимое файла через комбинацию
 `CTRL+S`.
 
 Закройте окно текстового редактора с файлом скрипта и проверьте содержимое скрипта командой
 `cat my_bash_1.sh`.
 
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/cat%20my_bash_1.png" width="400">
+
 Проверьте работу скрипта непосредственно в командной оболочке Kali Linux в текущем правом терминале. Запустите скрипт 
 `./my_bash_1.sh`.
+
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/my_bash_1.png" width="400">
 
 Если скрипт отработал корректно, он выведет запрашиваемую для отчёта информацию по основной системе Kali Linux.
 
@@ -105,6 +117,8 @@ CMD ["./my_bash_1.sh"]
 
 Закройте окно текстового редактора и проверьте содержимое соответствующей командой:
 
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/kali_3.png" width="600">
+
 Ваш Dockerfile с директивами для создания преднастроенного образа готов.
 
 4. Выполните сборку образа.
@@ -122,6 +136,8 @@ CMD ["./my_bash_1.sh"]
 
 Проверьте наличие подготовленного образа в системе соответствующей командой:
 
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/kali_4.png" width="700">
+
 5. Запустите контейнер на основе образа.
 
 Настал ответственный момент запуска контейнера на основе подготовленного образа `image_bash_1.`
@@ -132,7 +148,11 @@ CMD ["./my_bash_1.sh"]
 После запуска переключитесь в правый терминал и запустите скрипт
 `./my_bash_1.sh`.
 
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/my_bash_1_2.png)
+
 Проверьте оставшиеся в системе контейнеры после завершения их работы командой, которую уже применяли в предыдущем задании:
+
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/kali_5.png" width="700">
 
 Если таковых не обнаружено, то всё работает именно так, как вы настроили. Поздравляем!
 
