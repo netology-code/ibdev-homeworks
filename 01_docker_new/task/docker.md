@@ -16,14 +16,21 @@
 
 - `sudo apt update` (обновление информации для репозиториев):
 
-
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/sudo%20apt%20update.png)
 
 - `sudo apt install docker.io docker-compose` (установка базовых компонентов):
 
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/sudo%20apt%20install%20docker_1.png)
+
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/sudo%20apt%20install%20docker_2.png)
+
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/sudo%20apt%20install%20docker_3.png)
 
 2. После успешной установки базовых компонентов Docker в виртуальной машине должен появиться дополнительный сетевой интерфейс `docker0`, которому всегда присваивается адрес `172.17.0.1` в сети `172.17.0.0/16`.
 
 Проверьте наличие сетевого интерфейса `docker0` с помощью команды `ifconfig` (на Kali Linux):
+
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/ip%20a_2.png" width="700">
 
 Примечание: на Ubuntu аналогом этой команды будет `ip a`.
 
@@ -43,6 +50,8 @@
 - проверьте полный путь к каталогу, в котором находитесь командой 
 `pwd`
 
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/pwd.png" width="400">
+
 4. Загрузите образ Docker.
 
 Общедоступные образы Docker размещаются на специализированном ресурсе Docker HUB. Вы можете ознакомиться с Docker HUB и образами Docker по [ссылке](https://hub.docker.com/).
@@ -56,10 +65,14 @@
 - `pull` - загрузить образ из репозитория Docker HUB,
 - `bash` - имя выбранного для загрузки образа Docker.
 
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/bash.png)
+
 Проверьте наличие загруженного образа в виртуальной машине с помощью команды 
 `sudo docker image ls`,
 
 где `image ls` - показать загруженные и размещённые в системе образы Docker.
+
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/image%20ls.png" width="700">
 
 Отлично! Образ загружен. Обратите внимание на размер образа - он составляет 14 Мб.
 
@@ -72,7 +85,7 @@
 - `образ` - статический элемент, который подготовлен для запуска контейнеров соответствующего назначения и функционала. Образ не изменяется при работе с контейнером,
 - `контейнер` - динамический элемент, который после запуска представляет собой временную компактную виртуальную систему, предназначенную для выполнения команд и решения определённых задач. Контейнер изолирован от основной ОС виртуальной машины и активен до тех пор, пока мы не завершим его работу. 
 
-Запустите контейнер на базе образа Bash в интерактивном режиме командой
+Запустите контейнер на базе образа bash в интерактивном режиме командой
 `sudo docker run -it bash`,
 
 где:
@@ -81,6 +94,8 @@
 - `bash` - имя выбранного образа для запуска на его основе контейнера. 
 
 Если образ не был предварительно загружен и отсутствует в нашей виртуальной машине, то он загрузится из хранилища Docker HUB в процессе запуска контейнера.
+
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/Docker%20HUB.png" width="400">
 
 Если был получен вывод как на скриншоте, значит вы находитесь внутри контейнера в интерактивном режиме. Поздравляем с успешным запуском первого контейнера Docker! 
 
@@ -92,6 +107,10 @@
 
 Терминал Kali Linux позволяет разделить окно активного терминала на несколько окон с терминалами. Если ваш экран достаточно широкий, то для удобства работы можно разделить терминал на два окна по вертикали. Вы можете подбрать для себя любой другой удобный вариант из предложенных выше.
 
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/kali_1.png)
+
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/kali_2.png)
+
 В терминале слева вы находитесь в интерактивном сеансе контейнера bash, а в терминале справа - в командной оболочке виртуальной Kali Lunux.
 
 7. Уточните статус контейнеров.
@@ -101,7 +120,9 @@
 
 где `ps` - показать список активных контейнеров.
 
-В нашем случае вы должны увидеть один активный контейнер.
+В нашем случае вы должны увидеть один активный контейнер:
+
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/ps.png)
 
 Обратите внимание на крайний столбец справа, где указывается имя контейнера, которое присваивается случайным образом автоматически, если вы не присвоили контейнеру конкретное имя. 
 
@@ -116,12 +137,18 @@
 
 После успешного завершения команды остановки контейнера в правом терминале вы увидите, что в левом терминале контейнер завершил работу и вернулся в командную оболочку виртуальной Kali Linux.
 
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/Kali%20Linux_1.png" width="400">
+
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/Kali%20Linux_2.png" width="350">
+
 Вы остановили работу контейнера. А что с ним произошло на самом деле?
 
 Давайте проверим наличие не только активных, а вообще всех контейнеров в виртуальной машине командой
 `sudo docker ps -a`,
 
 где `ps -a` - показать список всех контейнеров.
+
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/ps%20-a.png)
 
 Мы видим знакомый нам контейнер, с тем же ID и Names, но в статусе Exited (остановлен). Что это означает?
 
@@ -146,6 +173,8 @@
 
 где `rm` - удалить неактивный контейнер.
 
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/rm.png)
+
 В результате контейнер будет полностью удалён из виртуальной машины. При этом образ Bash остался. 
 
 Проверьте наличие образов командой, которую применяли уже ранее - 
@@ -159,6 +188,8 @@
 где:
 - `rmi` - удалить освобождённый от контейнеров образ,
 - `bash` - имя образа.
+
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/bash_2.png)
 
 -----
 
