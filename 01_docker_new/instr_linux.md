@@ -46,15 +46,15 @@ _Вариант 2. Ubuntu_
 
 - `ifconfig` (на Kali Linux):
 
-
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/ifconfig.png" width="700">
 
 - `ip a` (на Ubuntu):
 
-
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/ip%20a.png)
 
 2. Проверьте доступность интернета пингами одного или нескольких общедоступных внешних сайтов, например, `ping -с 5 ya.ru`:
 
-
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/ping%20-%D1%81%205%20ya.png" width="700">
 
 3. Если на ваших виртуальных машинах необходимые сетевые интерфейсы отсутствуют, либо настройки не соответствуют требуемым, выполните их настройку и повторите проверку текущего состояния сетевых интерфейсов и доступность интернета представленными выше командами. 
 
