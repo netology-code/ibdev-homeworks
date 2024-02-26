@@ -1,4 +1,4 @@
-:house: [На главную](https://github.com/netology-code/ipnt-homeworks/blob/main/10-02_new.md)
+:house: [На главную](https://github.com/netology-code/ibdev-homeworks/tree/master/01_docker_new)
 
 # Задание 1. Образы и контейнеры Docker
 
@@ -176,4 +176,4 @@
 
 -----
 
-:house: [На главную](https://github.com/netology-code/ipnt-homeworks/blob/main/10-02_new.md)
+:house: [На главную](https://github.com/netology-code/ibdev-homeworks/tree/master/01_docker_new)
