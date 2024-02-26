@@ -27,7 +27,11 @@
 
 - `sudo docker pull curlimages/curl`
 
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/sudo%20docker%20pull%20curlimage.png" width="600">
+
 2. Для этого проекта необходимо подготовить два файла в рабочем каталоге проекта. Для этого перейдите в правый терминал и создайте пустые файлы `index.html` и `docker-compose.yml`. Выполните контрольную проверку их наличия в рабочем каталоге (необходимые команды вы уже применяли в предыдущих заданиях).
+
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/kali_6.png" width="600">
 
 3. Сформируйте свой вариант файла титульной страницы для Nginx. Для этого откройте файл `index.html` с помощью текстового редактора `mousepad` или другого на своё усмотрение. Скопируйте подготовленный код:
 
@@ -51,6 +55,8 @@
 
 4. Для следующего файла вам понадобится информация об IP вашей виртуальной машины Kali Linux для сетевого интерфейса внутренней сети. Для этого выполните команду
 `ifconfig`.
+
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/ifconfig_2.png" width="600">
 
 Приступаем к описанию директив конфигурационного файла `docker-compose.yml`, который является ключевым в этом проекте и предназначен для формирования и управления связкой контейнеров.
 
@@ -84,6 +90,8 @@ services:
 5. Перейдите в левый терминал и запустите связку контейнеров, управляемую конфигурационным файлом `docker-compose.yml` командой
 `sudo docker-compose up`.
 
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/sudo%20docker-compose%20up.png)
+
 Внимательно изучите вывод информации в контейнере. Обратите внимание, что первый и второй контейнеры помечены разным цветом: 
 - коричневым - `nginx`,
 - синим - `curl`.
@@ -92,9 +100,15 @@ services:
 
 У вас имеется возможность видеть эту страницу в браузере. Переключитесь на второй рабочий стол (у Kali Linux их четыре), откройте браузер Mozilla Firefox. Впишите в адресную строку браузера адрес из файла `docker-compose.yml`, по которому подключается Curl с вашим IP.  результате вы получите стандартную титульную страницу Nginx.
 
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/Nginx_1.png" width="700">
+
 6. Переключитесь снова на первый рабочий стол с терминалами. Перейдите в левый терминал активных контейнеров и прервите их работу комбинацией клавиш `Ctrl+C`.  
 
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/Nginx_2.png)
+
 Перейдите в правый терминал и проверьте наличие контейнеров и их состояние с помощью применяемой ранее команды.
+
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/Nginx_3.png)
 
 Вы увидете два неактивных контейнера.
 
@@ -104,9 +118,13 @@ services:
 Перейдите в левый терминал и повторите запуск контейнеров командой
 `sudo docker-compose up`.
 
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/sudo%20docker-compose%20up_2.png)
+
 В результате вы увидите новый код титульной страницы Nginx, который содержит ваше ФИО из подготовленной страницы для проекта.
 
 Чтобы окончательно убедиться и подтвердить замену титульной страницы, переключитесь на второй рабочий стол, где открыт браузер Mozilla Firefox с адресом из контейнера и обновите страницу.
+
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/hello.png" width="700">
 
 Если вы видите приветствие с вашим ФИО, значит всё сделано правильно. Вы успешно выполнили это непростое практическое упражнение. 
 
@@ -115,9 +133,15 @@ services:
 Переключитесь на первый рабочий стол с терминалами. Перейдите в правый терминал основной системы и завершите работу связки активных контейнеров одной командой
 `sudo docker-compose down`.
 
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/sudo%20docker-compose%20down.png" width="400">
+
 В левом терминале отметьте завершение работы контейнеров и возврат в командную оболочку основной системы.
 
+![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/sudo%20docker-compose%20down_2.png)
+
 Проверьте наличие контейнеров в основной системе и убедитесь, что они отсутствуют и были удалены после остановки контейнеров через docker-compose с помощью команды, которую вы применяли ранее.
+
+<img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/sudo%20docker-compose%20down_3.png" width="700">
 
 Отлично! Вы успешно завершили работу с этим заданием.
 
