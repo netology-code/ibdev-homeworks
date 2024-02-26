@@ -52,7 +52,9 @@ _Вариант 2. Ubuntu_
 
 ![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/ip%20a.png)
 
-2. Проверьте доступность интернета пингами одного или нескольких общедоступных внешних сайтов, например, `ping -с 5 ya.ru`:
+2. Проверьте доступность интернета пингами одного или нескольких общедоступных внешних сайтов, например,
+
+`ping -с 5 ya.ru`:
 
 <img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/ping%20-%D1%81%205%20ya.png" width="700">
 
