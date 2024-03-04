@@ -54,7 +54,8 @@
 
 
 4. Для следующего файла вам понадобится информация об IP вашей виртуальной машины Kali Linux для сетевого интерфейса внутренней сети. Выполните команду
-`ifconfig`.
+
+`ifconfig`
 
 <img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/ifconfig_2.png" width="600">
 
@@ -83,12 +84,15 @@ services:
       - nginx
 ```
 
-Вместо указанного в файле IP наберите свой, полученный после его проверки командой `ifconfig`. 
+Вместо указанного в файле IP наберите свой, полученный после его проверки командой 
+
+`ifconfig`
 
 **Обратите внимание!** Необходимо строго соблюдать отступы, приведённые в строках директив. 
 
 5. Перейдите в левый терминал и запустите связку контейнеров, управляемую конфигурационным файлом `docker-compose.yml` командой
-`sudo docker-compose up`.
+
+`sudo docker-compose up`
 
 ![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/sudo%20docker-compose%20up.png)
 
@@ -118,17 +122,14 @@ sudo docker cp index.html
 docker_nginx_1:/usr/share/nginx/html/index.html`
 ```
 где:
-
-`cp` - скопировать;
-
-`index.html` - копируемый файл;
-
-`docker_nginx_1`  - имя контейнера, в который копируем файл;
-
-`/usr/share/nginx/html/index.html` - полный путь к заменяемому файлу в контейнере.
+- `cp` - скопировать;
+- `index.html` - копируемый файл;
+- `docker_nginx_1`  - имя контейнера, в который копируем файл;
+- `/usr/share/nginx/html/index.html` - полный путь к заменяемому файлу в контейнере.
 
 Перейдите в левый терминал и повторите запуск контейнеров командой
-`sudo docker-compose up`.
+
+`sudo docker-compose up`
 
 ![](https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/sudo%20docker-compose%20up_2.png)
 
@@ -143,7 +144,8 @@ docker_nginx_1:/usr/share/nginx/html/index.html`
 8. Вам осталось завершить работу активной связки контейнеров. Обратите внимание, что в левом терминале контейнер выводит информацию обо всех запросах к Nginx.
 
 Переключитесь на первый рабочий стол с терминалами. Перейдите в правый терминал основной системы и завершите работу связки активных контейнеров одной командой
-`sudo docker-compose down`.
+
+`sudo docker-compose down`
 
 <img src="https://github.com/netology-code/ibdev-homeworks/blob/master/01_docker_new/pic/sudo%20docker-compose%20down.png" width="400">
 
