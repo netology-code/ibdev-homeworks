@@ -1,4 +1,4 @@
-:house: [На главную](https://github.com/netology-code/ipnt-homeworks/blob/main/10-02_new.md)
+:house: [На главную](https://github.com/netology-code/ibdev-homeworks/tree/master/01_docker_new)
 
 # Инструкция по настройке компонентов Docker в ВМ
 
@@ -64,4 +64,4 @@ _Вариант 2. Ubuntu_
 
 -----
 
-:house: [На главную](https://github.com/netology-code/ipnt-homeworks/blob/main/10-02_new.md)
+:house: [На главную](https://github.com/netology-code/ibdev-homeworks/tree/master/01_docker_new)
