@@ -118,9 +118,13 @@ sudo docker cp index.html
 docker_nginx_1:/usr/share/nginx/html/index.html`
 ```
 где:
+
 `cp` - скопировать;
+
 `index.html` - копируемый файл;
+
 `docker_nginx_1`  - имя контейнера, в который копируем файл;
+
 `/usr/share/nginx/html/index.html` - полный путь к заменяемому файлу в контейнере.
 
 Перейдите в левый терминал и повторите запуск контейнеров командой
