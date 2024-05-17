@@ -119,7 +119,10 @@ services:
 7. Далее проделаем интересный и полезный трюк - заменим в контейнере nginx титульную страницу на подготовленный ранее экземпляр `index.html` командой
 ```
 sudo docker cp index.html
-docker_nginx_1:/usr/share/nginx/html/index.html`
+docker_nginx_1:/usr/share/nginx/html/index.html
+
+где
+docker_nginx_1 - это имя целевого контейнера (NAMES) в выводе предыдущей команды sudo docker ps -a
 ```
 где:
 - `cp` - скопировать;
