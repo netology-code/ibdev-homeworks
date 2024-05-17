@@ -121,13 +121,11 @@ services:
 sudo docker cp index.html
 docker_nginx_1:/usr/share/nginx/html/index.html
 
-где
-docker_nginx_1 - это имя целевого контейнера (NAMES) в выводе предыдущей команды sudo docker ps -a
 ```
 где:
 - `cp` - скопировать;
 - `index.html` - копируемый файл;
-- `docker_nginx_1`  - имя контейнера, в который копируем файл;
+- `docker_nginx_1` - это имя целевого контейнера (NAMES) в выводе предыдущей команды sudo docker ps -a;
 - `/usr/share/nginx/html/index.html` - полный путь к заменяемому файлу в контейнере.
 
 Перейдите в левый терминал и повторите запуск контейнеров командой
